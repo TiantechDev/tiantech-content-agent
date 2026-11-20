@@ -38,7 +38,7 @@ jobs:
             (.development_3.source_url | type == "string" and test("^https://")) and
             (.weekly_signal | type == "string" and length > 0) and
             (.company_linkedin_text | type == "string" and length > 0 and length <= 2000) and
-            (.image_url | type == "string" and test("^https://raw[.]githubusercontent[.]com/kaptangece53/tiantech-content-agent/[0-9a-f]{40}/images/weekly-recap/[A-Za-z0-9._-]+[.]png$")) and
+            (.image_url | type == "string" and test("^https://raw[.]githubusercontent[.]com/(TiantechDev|kaptangece53)/tiantech-content-agent/[0-9a-f]{40}/images/weekly-recap/[A-Za-z0-9._-]+[.]png$")) and
             (.image_filename | type == "string" and length > 0) and
             (.image_alt_text | type == "string" and length > 0) and
             (.publish_company == true) and
