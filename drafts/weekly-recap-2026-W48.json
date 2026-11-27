@@ -1,0 +1,51 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "week_id": "2026-W48",
+  "title": "TIANTECH | Haftanın Teknoloji ve Siber Güvenlik Özeti (20–27 Kasım 2026)",
+  "development_1": {
+    "title": "Juniper Session Smart Conductor CVE-2026-103406 aktif istismar",
+    "published_at": "2026-11-26",
+    "what_happened": "Juniper ve CISA aktif istismarı doğruladı; kritik OS komut enjeksiyonu root düzeyinde çalıştırmaya yol açabiliyor.",
+    "why_it_matters": "Merkezi ağ orkestrasyonu etki alanını genişletir.",
+    "business_impact": "Ağ yönetimi, hizmet sürekliliği ve yatay hareket riski.",
+    "recommended_attention": "Etkilenen sürümleri envanterle; 7.2.3/7.1.7/7.0.5 veya üretici önerdiği sabit sürüme geç; yönetim erişimini kısıtla.",
+    "source_name": "SecurityWeek / Juniper ve CISA açıklamaları",
+    "source_url": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
+    "importance_score": 97,
+    "selection_reason": "Aktif istismar, yüksek CVSS ve merkezi ağ yönetim etkisi."
+  },
+  "development_2": {
+    "title": "1Password GitHub hesabı üzerinden yazılım tedarik zinciri ihlali",
+    "published_at": "2026-11-25",
+    "what_happened": "Ele geçirilen çalışan GitHub hesabıyla özel kod depolarına erişildi, arka uç servislerine kötü amaçlı kod yerleştirildi ve müşteri hesap metaverileri alındı; kasalar etkilenmedi.",
+    "why_it_matters": "Geliştirici hesabı ile dağıtım hattı güvenliği doğrudan müşteri verisine bağlanıyor.",
+    "business_impact": "Hesap verisi ifşası, oltalama riski, CI/CD güven zincirinin bozulması.",
+    "recommended_attention": "GitHub ve CI/CD ayrıcalıklarını gözden geçir; token rotasyonu, değişiklik onayı, imzalı artefakt ve olay izleme kontrollerini güçlendir.",
+    "source_name": "BleepingComputer / 1Password açıklaması",
+    "source_url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+    "importance_score": 95,
+    "selection_reason": "Kimlik güvenliği, yazılım tedarik zinciri ve müşteri verisi etkisi."
+  },
+  "development_3": {
+    "title": "Microsoft NTLM güvenlik güncellemesi sonrası kimlik doğrulama uyumsuzlukları",
+    "published_at": "2026-11-25",
+    "what_happened": "CVE-2026-118737 düzeltmesinin NTLM imzalama değişiklikleri bazı üçüncü taraf SSO ve proxy uygulamalarında kimlik doğrulama hatalarına neden olabiliyor.",
+    "why_it_matters": "Güvenlik sertleştirmesi ile eski entegrasyonların uyumluluğu birlikte yönetilmeli.",
+    "business_impact": "Kimlik doğrulama kesintileri, erişim sorunları, değişiklik yönetimi riski.",
+    "recommended_attention": "NTLM bağımlılıklarını belirle, Kerberos uyumluluğunu değerlendir, kontrollü dağıtım ve geri dönüş planı hazırla; güvenlik gevşetmesini kalıcı çözüm yapma.",
+    "source_name": "BleepingComputer / Microsoft açıklaması",
+    "source_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+    "importance_score": 91,
+    "selection_reason": "Geniş Windows ekosistemi, güvenlik-güvenilirlik dengesi ve operasyonel etki."
+  },
+  "weekly_signal": "Yönetim katmanı, yazılım tedarik zinciri ve kimlik doğrulama değişiklikleri birlikte değerlendirilmeli.",
+  "human_comment": "Ben güvenlik önceliğini yalnızca CVSS puanıyla belirlemiyorum; sistemin kurumdaki rolünü ve olası yayılım etkisini de değerlendiriyorum.",
+  "company_linkedin_text": "TIANTECH | Haftanın Teknoloji ve Siber Güvenlik Özeti (20–27 Kasım 2026)\n\nBu hafta üç gelişme aynı gerçeği hatırlattı: Kurumsal güvenlik, yalnızca bir ürünün güncel olmasına değil, o ürünü yöneten erişimlerin ve bağımlılıkların bütünlüğüne dayanıyor.\n\n1. Juniper yönetim katmanında aktif istismar\n26 Kasım'da Juniper Session Smart Conductor için CVE-2026-103406 zafiyetinin saldırılarda kullanıldığı duyuruldu. CVSS 9,8 düzeyindeki komut enjeksiyonu, uygun koşullarda root yetkisiyle komut çalıştırılmasına imkân tanıyor. Ağın merkezi yönetim bileşenleri, sıradan sunuculardan daha geniş etki alanına sahip. Kurumlar etkilenen sürümleri tespit etmeli, üretici düzeltmelerini uygulamalı ve yönetim erişimlerini sınırlandırmalı.\n\n2. 1Password olayında geliştirici hesabı ve CI/CD riski\n25 Kasım'da açıklanan olayda, ele geçirilen bir GitHub çalışan hesabı üzerinden özel depolara erişildi ve arka uç hizmetlerine zararlı kod yerleştirildi. Müşteri hesap verileri ve kaynak kod etkilendi; şirket, parola kasalarının ve şifreleme anahtarlarının ele geçirilmediğini belirtti. Bu olay, yazılım tedarik zincirinde hesap güvenliği, imzalı dağıtım ve ayrıcalıklı erişim denetiminin önemini gösteriyor.\n\n3. Windows NTLM güvenlik güncellemesinde uyumluluk sorunu\n25 Kasım'da Microsoft, CVE-2026-118737 için getirilen NTLM imzalama iyileştirmelerinin bazı üçüncü taraf SSO ve kimlik doğrulama çözümlerinde kesintiye yol açabildiğini doğruladı. Güvenlik güncellemesini ertelemek yerine etkilenen entegrasyonları belirlemek, Kerberos uyumluluğunu incelemek ve değişiklikleri kontrollü yaymak gerekiyor.\n\nBu haftanın ortak sinyali\nBen güvenlik önceliğini yalnızca CVSS puanıyla belirlemiyorum; sistemin kurumdaki rolünü ve olası yayılım etkisini de değerlendiriyorum. Bir yama planının, erişim kontrolü ve operasyonel doğrulamayla birlikte ele alınması gerektiğini düşünüyorum. Gerçek dayanıklılığı, değişiklikten sonra yapılan kontrollerde görüyorum.\n\n#TIANTECH #TIANTECHINOVASYON #SiberGuvenlik #VeriGuvenligi",
+  "image_filename": "2026-W48.png",
+  "image_url": "",
+  "image_alt_text": "Üç katmanlı premium teknoloji mimarisi: ağ yönetimi, yazılım tedarik zinciri ve kimlik doğrulama güvenliği.",
+  "publish_company": false,
+  "generated_at": "2026-11-27T11:19:11+03:00",
+  "agent": "TIANTECH Weekly Intelligence Agent",
+  "review_reason": "Premium PNG created and validated locally, but binary bytes cannot be securely bridged from image-generation container to GitHub connector in this execution context. No immutable image URL, so queue untouched."
+}
