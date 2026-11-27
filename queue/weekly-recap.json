@@ -46,5 +46,6 @@
   "image_alt_text": "Koyu lacivert teknoloji ağında üç güvenlik alanını bağlayan mavi ve turuncu düğümler.",
   "publish_company": true,
   "generated_at": "2026-11-20T08:23:00Z",
-  "agent": "TIANTECH Weekly Intelligence Agent"
+  "agent": "TIANTECH Weekly Intelligence Agent",
+  "retry_reason": "Manual W47 publication retry requested after LinkedIn post was not observed; verify Make and LinkedIn results."
 }
